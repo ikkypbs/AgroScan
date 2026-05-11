@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/react-web'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  preview: {
+  server: {
     port: 8080,
     strictPort: true,
     host: true,
     allowedHosts: true
   },
-  server: {
+  preview: {
     port: 8080,
     strictPort: true,
     host: true,
