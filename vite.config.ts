@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Tambahkan ini biar jalurnya relatif dan nggak putih polos
+  base: '', // Pakai string kosong supaya path-nya fleksibel di Cloud Run
+  build: {
+    outDir: 'dist',
+  },
   server: {
     port: 8080,
     host: true,
