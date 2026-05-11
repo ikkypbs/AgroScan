@@ -3,12 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Wajib pakai titik
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true
-  },
+  base: '/', 
   server: {
     port: 8080,
     host: true
