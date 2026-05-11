@@ -3,11 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Pakai titik-garis miring
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true
-  },
+  base: './',
   server: {
     port: 8080,
     host: true,
