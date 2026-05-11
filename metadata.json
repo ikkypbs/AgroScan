@@ -1,0 +1,6 @@
+{
+  "name": "AgroScan",
+  "description": "Asisten cerdas pengolahan lahan menggunakan AI multimodal untuk analisis vegetasi dan rekomendasi pertanian.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["Multimodal AI Analysis", "Precision Agriculture"]
+}

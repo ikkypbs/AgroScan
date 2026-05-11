@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #158332;
+  --color-brand-secondary: #0D5C22;
+  --color-brand-accent: #FFD700;
+  --color-brand-neon: #D4FF00;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F4F7F4] text-neutral-900;
+    font-family: var(--font-sans);
+    font-size: 16px;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    @apply tracking-tighter;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white border border-neutral-100 shadow-xl shadow-neutral-200/50 rounded-[2.5rem];
+  }
+  
+  .btn-primary {
+    @apply bg-brand-primary text-white px-8 py-4 rounded-2xl font-black transition-all hover:bg-brand-secondary hover:shadow-lg active:scale-95 disabled:opacity-50 disabled:pointer-events-none shadow-xl shadow-brand-primary/20 flex items-center justify-center gap-3;
+  }
+  
+  .input-field {
+    @apply w-full bg-white border-2 border-neutral-100 rounded-2xl px-6 py-4 focus:outline-none focus:ring-4 focus:ring-brand-primary/10 focus:border-brand-primary transition-all text-base font-medium;
+  }
+
+  .markdown-body {
+    @apply text-base leading-relaxed font-medium text-neutral-700;
+  }
+}
+
